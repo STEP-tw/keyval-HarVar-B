@@ -3,7 +3,6 @@ const strictParseInfoCreator=require("./parseInfoCreator.js").strict;
 
 var StrictParser=function(listOfKeys) {
   Parser.call(this);
-  let sanitisedListOfKeys=listOfKeys||[];
   this.parseInfoCreator=strictParseInfoCreator(sanitisedListOfKeys);
 }
 
